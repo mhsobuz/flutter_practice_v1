@@ -15,7 +15,12 @@ class TestApp extends StatelessWidget {
           height: 200,
           width: 250,
           color: Colors.green,
-          child: Center(child: Text("It is Container")),
+          child: Center(
+            child: Text(
+              "It is Container",
+              style: TextStyle(fontSize: 30.0, color: Colors.white),
+            ),
+          ),
         ),
       ),
     );
