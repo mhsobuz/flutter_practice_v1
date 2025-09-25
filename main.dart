@@ -11,14 +11,16 @@ class TestApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: Container(
-          height: 200,
-          width: 250,
-          color: Colors.green,
-          child: Center(
-            child: Text(
-              "It is Container",
-              style: TextStyle(fontSize: 30.0, color: Colors.white),
+        body: Center(
+          child: Container(
+            height: 200,
+            width: double.infinity,
+            color: Colors.green,
+            child: Center(
+              child: Text(
+                "Mahmud Sobuz",
+                style: TextStyle(fontSize: 30.0, color: Colors.white),
+              ),
             ),
           ),
         ),
