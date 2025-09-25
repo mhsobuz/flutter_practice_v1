@@ -10,7 +10,9 @@ class TestApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(body: Center(child: Text("I'm Mahmudul Hasan"))),
+      home: Scaffold(
+        body: Container(height: 200, width: 250, color: Colors.green),
+      ),
     );
   }
 }
