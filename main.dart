@@ -1,28 +1,25 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(TestApp());
+  runApp(MyApp());
 }
 
-class TestApp extends StatelessWidget {
-  const TestApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: Center(
-          child: Container(
-            height: 200,
-            width: double.infinity,
-            color: Colors.green,
-            child: Center(
-              child: Text(
-                "Mahmud Sobuz",
-                style: TextStyle(fontSize: 30.0, color: Colors.white),
-              ),
-            ),
-          ),
+        body: Column(
+          children: [
+            Container(height: 100, width: double.infinity, color: Colors.green),
+            Container(height: 100, width: double.infinity, color: Colors.red),
+            Container(height: 100, width: double.infinity, color: Colors.green),
+            Container(height: 100, width: double.infinity, color: Colors.red),
+            Container(height: 100, width: double.infinity, color: Colors.green),
+            Container(height: 100, width: double.infinity, color: Colors.red),
+          ],
         ),
       ),
     );
