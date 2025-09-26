@@ -11,17 +11,15 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: Container(
-          color: Colors.blueGrey,
-          child: Center(
-            child: Padding(
-              padding: EdgeInsets.all(20.0),
-              child: CircleAvatar(
-                backgroundColor: Colors.green,
-                radius: 28,
-                child: Icon(Icons.message, size: 24),
-              ),
-            ),
+        body: Center(
+          child: Column(
+            // একাধিক widget রাখার জন্য Column ব্যবহার করলাম
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              ElevatedButton(onPressed: () {}, child: Text("Click Me")),
+              SizedBox(height: 20), // বোতামের মধ্যে ফাঁকা দেওয়ার জন্য
+              TextButton(onPressed: () {}, child: Text("Text Button")),
+            ],
           ),
         ),
       ),
