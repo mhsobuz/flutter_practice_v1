@@ -12,14 +12,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: Center(
-          child: Column(
-            // একাধিক widget রাখার জন্য Column ব্যবহার করলাম
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              ElevatedButton(onPressed: () {}, child: Text("Click Me")),
-              SizedBox(height: 20), // বোতামের মধ্যে ফাঁকা দেওয়ার জন্য
-              TextButton(onPressed: () {}, child: Text("Text Button")),
-            ],
+          child: Container(
+            child: SizedBox(
+              width: 150,
+              height: 50,
+              child: ElevatedButton(
+                onPressed: () {},
+                child: Row(children: [Icon(Icons.search), Text("Click Me")]),
+              ),
+            ),
           ),
         ),
       ),
