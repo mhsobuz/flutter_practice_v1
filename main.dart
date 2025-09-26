@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
         body: Column(
           children: [
             Expanded(
+              flex: 2,
               child: Container(
                 height: 300,
                 width: double.infinity,
@@ -21,17 +22,11 @@ class MyApp extends StatelessWidget {
               ),
             ),
             Expanded(
+              flex: 1,
               child: Container(
-                height: 200,
+                height: 300,
                 width: double.infinity,
                 color: Colors.red,
-              ),
-            ),
-            Expanded(
-              child: Container(
-                height: 200,
-                width: double.infinity,
-                color: Colors.blue,
               ),
             ),
           ],
