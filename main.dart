@@ -11,16 +11,63 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: Text("My Test App"),
-          leading: Icon(Icons.call),
-          actions: [Icon(Icons.notification_add), Icon(Icons.message)],
+        appBar: AppBar(title: Text("ListView")),
+        body: Container(
+          height: double.infinity,
+          width: double.infinity,
+          child: ListView(
+            children: [
+              Padding(
+                padding: EdgeInsets.all(20),
+                child: Container(
+                  width: double.infinity,
+                  height: 200,
+                  color: Colors.red,
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.all(20),
+                child: Container(
+                  width: double.infinity,
+                  height: 200,
+                  color: Colors.red,
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.all(20),
+                child: Container(
+                  width: double.infinity,
+                  height: 200,
+                  color: Colors.red,
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.all(20),
+                child: Container(
+                  width: double.infinity,
+                  height: 200,
+                  color: Colors.red,
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.all(20),
+                child: Container(
+                  width: double.infinity,
+                  height: 200,
+                  color: Colors.red,
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.all(20),
+                child: Container(
+                  width: double.infinity,
+                  height: 200,
+                  color: Colors.red,
+                ),
+              ),
+            ],
+          ),
         ),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {},
-          child: Icon(Icons.add),
-        ),
-        body: Center(child: Text("Hello Mahmud")),
       ),
     );
   }
