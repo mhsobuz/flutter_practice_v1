@@ -11,29 +11,30 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: SingleChildScrollView(
-          child: Column(
-            children: [
-              Container(
-                height: 200,
+        body: Column(
+          children: [
+            Expanded(
+              child: Container(
+                height: 300,
                 width: double.infinity,
                 color: Colors.green,
               ),
-              Container(height: 200, width: double.infinity, color: Colors.red),
-              Container(
+            ),
+            Expanded(
+              child: Container(
                 height: 200,
                 width: double.infinity,
-                color: Colors.green,
+                color: Colors.red,
               ),
-              Container(height: 200, width: double.infinity, color: Colors.red),
-              Container(
+            ),
+            Expanded(
+              child: Container(
                 height: 200,
                 width: double.infinity,
-                color: Colors.green,
+                color: Colors.blue,
               ),
-              Container(height: 200, width: double.infinity, color: Colors.red),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );
