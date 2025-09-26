@@ -11,33 +11,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: Column(
-          children: [
-            Expanded(
-              flex: 2,
-              child: Container(
-                height: 300,
-                width: double.infinity,
-                color: Colors.green,
-              ),
+        body: Center(
+          child: Padding(
+            padding: EdgeInsets.all(20.0),
+            child: Image.network(
+              "https://windflowerflorist.com/cdn/shop/articles/unnamed-_16_a3c38aff-bd63-4976-86c4-8b644de5e484_1600x.jpg",
             ),
-            Expanded(
-              flex: 1,
-              child: Padding(
-                padding: EdgeInsets.only(
-                  top: 20,
-                  right: 30,
-                  left: 50,
-                  bottom: 30,
-                ),
-                child: Container(
-                  height: 300,
-                  width: double.infinity,
-                  color: Colors.red,
-                ),
-              ),
-            ),
-          ],
+          ),
         ),
       ),
     );
