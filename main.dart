@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'widgets/list_item.dart';
 
 void main() {
   runApp(MyApp());
@@ -12,18 +11,30 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(title: Text("ListView")),
+        appBar: AppBar(title: Text("Different")),
         body: Container(
-          height: double.infinity,
-          width: double.infinity,
-          child: ListView(
+          // Main Container
+          color: Colors.greenAccent,
+          child: Stack(
             children: [
-              ListItem(),
-              ListItem(),
-              ListItem(),
-              ListItem(),
-              ListItem(),
-              ListItem(),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    color: Colors.blue,
+                    height: 150,
+                    width: double.infinity,
+                  ),
+                  Container(
+                    color: Colors.blueGrey,
+                    height: 150,
+                    width: double.infinity,
+                  ),
+                ],
+              ),
+              Center(
+                child: CircleAvatar(radius: 60.0, backgroundColor: Colors.red),
+              ),
             ],
           ),
         ),
