@@ -10,7 +10,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(body: Center(child: Image.asset("assets/images/pc.png"))),
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("My Test App"),
+          leading: Icon(Icons.call),
+          actions: [Icon(Icons.notification_add), Icon(Icons.message)],
+        ),
+        body: Center(child: Text("Hello Mahmud")),
+      ),
     );
   }
 }
