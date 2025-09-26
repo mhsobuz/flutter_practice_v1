@@ -23,10 +23,18 @@ class MyApp extends StatelessWidget {
             ),
             Expanded(
               flex: 1,
-              child: Container(
-                height: 300,
-                width: double.infinity,
-                color: Colors.red,
+              child: Padding(
+                padding: EdgeInsets.only(
+                  top: 20,
+                  right: 30,
+                  left: 50,
+                  bottom: 30,
+                ),
+                child: Container(
+                  height: 300,
+                  width: double.infinity,
+                  color: Colors.red,
+                ),
               ),
             ),
           ],
