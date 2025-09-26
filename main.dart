@@ -16,6 +16,10 @@ class MyApp extends StatelessWidget {
           leading: Icon(Icons.call),
           actions: [Icon(Icons.notification_add), Icon(Icons.message)],
         ),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {},
+          child: Icon(Icons.add),
+        ),
         body: Center(child: Text("Hello Mahmud")),
       ),
     );
