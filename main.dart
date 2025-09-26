@@ -10,20 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Container(
-            child: SizedBox(
-              width: 150,
-              height: 50,
-              child: ElevatedButton(
-                onPressed: () {},
-                child: Row(children: [Icon(Icons.search), Text("Click Me")]),
-              ),
-            ),
-          ),
-        ),
-      ),
+      home: Scaffold(body: Center(child: Image.asset("assets/images/pc.png"))),
     );
   }
 }
